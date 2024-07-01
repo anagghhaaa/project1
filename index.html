@@ -1,0 +1,829 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROJECT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="task14.css">
+    </head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="i1 ms-4" src="./media/boat logo.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark fs-5 m-2 ms-5" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Wireless Earbuds</a></li>
+                <li><a class="dropdown-item" href="#">Wireless Speaker</a></li>
+                <li><a class="dropdown-item" href="#">Wired headphone</a></li>
+                <li><a class="dropdown-item" href="#">Neckbands</a></li>
+                <li><a class="dropdown-item" href="#">Wired Earphones</a></li>
+                <li><a class="dropdown-item" href="#">Party Speakers</a></li>
+                <li><a class="dropdown-item" href="#">Personalised Products</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fs-5 m-2 ms-2" aria-current="page" href="#">Boat Personlisation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fs-5 m-2 ms-2" href="#">Gift With Boat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fs-5 m-2 ms-2" href="#">Corporate Orders</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark fs-5 m-2 ms-2" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu text-dark">
+                <li><a class="dropdown-item" href="#">Daily Deals</a></li>
+                <li><a class="dropdown-item" href="#">Blogs</a></li>
+                <li><a class="dropdown-item" href="#">Refer & Earn</a></li>
+                <li><a class="dropdown-item" href="#">Careers</a></li>
+                <li><a class="dropdown-item" href="#">Social Responsibilty</a></li>
+                <li><a class="dropdown-item" href="#">Store Locator</a></li>
+                <li><a class="dropdown-item" href="#">Boat Community</a></li>
+              </ul>
+            </li>
+          </ul>
+  
+  
+          <div class="container-input me-3">
+            <input type="text" placeholder="Search" name="text" class="input">
+            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z"
+                fill-rule="evenodd"></path>
+            </svg>
+          </div>
+  
+          <i class="fa-regular fa-user me-3 mt-2"></i><i class="fa-solid fa-bag-shopping me-3 ms-2 mt-2"></i>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- <div class="container">
+          <div class="row">
+            <hr>
+            <div class="col-6 text-left"> 
+              <br><br><br>
+              <h1 class="f1 large-font">TRUE WIRELESS</h1>
+              <h2 class="large-font">EARBUDS</h2>
+              <h6 class="large-font1">Starting from $999*</h6>
+              <button type="button" class="btn btn-dark">Show Product</button>
+            </div>
+            <div class="col-6">
+              <img class="i2 ms-3" src="./media/boat1.jpeg" width="50px" alt="">
+            </div>
+          </div>
+        </div> -->
+  
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+  
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./media/boat carousel.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./media/boat carousel1.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./media/boat carousel2.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./media/boat carousel3.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./media/boat carousel4.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./media/boat carousel5.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+
+
+<br><br><br><br>
+
+<div class="container">
+    <h3 class="h3 ms-4 mt-4">Shop by <strong>Categories</strong></h3>
+    <div class="row-1">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air1.webp" alt="">
+        <h6 class="h6 mt-3">True Wireless <br> Earbuds</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air2.png" alt="">
+        <h6 class="h6 mt-3">Neckbands</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air3.webp" alt="">
+        <h6 class="h6 mt-3">Smart Watches</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air4.webp" alt="">
+        <h6 class="h6 mt-3">Wireless <br> Headphones</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air5.webp" alt="">
+        <h6 class="h6 mt-3">Wireless <br> Speakers</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air6.webp" alt="">
+        <h6 class="h6 mt-3">Wired Headphones</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air7.webp" alt="">
+        <h6 class="h6 mt-3">Wired Earphone</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air8.webp" alt="">
+        <h6 class="h6 mt-3">Sound bars</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air9.png" alt="">
+        <h6 class="h6 mt-3">Gaming Headphones</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air10.avif" alt="">
+        <h6 class="h6 mt-3">Party Speakers</h6>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+    <h3 class="h3 ms-4 mt-4">Shop by <strong>Categories</strong></h3>
+    <div class="row">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air1.webp" alt="">
+        <h6 class="h6 mt-3">True <br>Wireless <br> Earbuds</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air2.png" alt="">
+        <h6 class="h6 mt-3">Neckbands</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air3.webp" alt="">
+        <h6 class="h6 mt-3">Smart <br> Watches</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air4.webp" alt="">
+        <h6 class="h6 mt-3">Wireless <br> Headphones</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air5.webp" alt="">
+        <h6 class="h6 mt-3">Wireless <br> Speakers</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air6.webp" alt="">
+        <h6 class="h6 mt-3">Wired <br> Headphones</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air7.webp" alt="">
+        <h6 class="h6 mt-3">Wired Earphone</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air8.webp" alt="">
+        <h6 class="h6 mt-3">Sound bars</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air9.png" alt="">
+        <h6 class="h6 mt-3">Gaming Headphones</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air10.avif" alt="">
+        <h6 class="h6 mt-3">Party Speakers</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air4.webp" alt="">
+        <h6 class="h6 mt-3">Wireless <br> Headphones</h6>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 category-item">
+        <img class="category-img" src="./media/air5.webp" alt="">
+        <h6 class="h6 mt-3">Wireless <br> Speakers</h6>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+
+
+
+      <br><br>
+
+
+
+    <div class="container">
+        <div class="row ms-2 me-2">
+          <h3 class="h3 ms-4"><br><br>Summer <strong>Sale</strong></h3>
+          <img class="i4" src="./media/Strip_Web_2_1600x.webp" alt="">
+    
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+    
+              <img class="i3" src="./media/airdopes1.webp" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title">Airdopes 131</h5>
+                <p class="card-text">$899 <s class="s1">$2,999</s> <span class="span">70%off</span></p>
+                <p class="p1"><i class="fa-solid fa-star " style="color: #FFD43B;"></i>5.0 <button class="button  ms-5">Add
+                    To Cart </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="i3" src="./media/Airdopes2.webp" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title">Airpodes Atom 83</h5>
+                <p class="card-text">$999 <s class="s1">$3,490</s> <span class="span">71%off</span></p>
+                <p class="p1"><i class="fa-solid fa-star " style="color: #FFD43B;"></i>4.8 <button class="button  ms-5">Add
+                    To Cart </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="i3" src="./media/airdopes3.webp" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title">Airpodes 161</h5>
+                <p class="card-text">$999 <s class="s1">$2,490</s> <span class="span">60%off</span></p>
+                <p class="p1"><i class="fa-solid fa-star " style="color: #FFD43B;"></i>4.9 <button class="button  ms-5">Add
+                    To Cart </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="i3" src="./media/airdopes4.webp" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title">Nirvana Ion</h5>
+                <p class="card-text">$1,999 <s class="s1">$7,990</s> <span class="span">75%off</span></p>
+                <p class="p1"><i class="fa-solid fa-star " style="color: #FFD43B;"></i>4.9 <button class="button  ms-5">Add
+                    To Cart </button>
+                </p>
+    
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="container">
+
+        <br><br><br><br>
+        <h3 class="top ms-5 mt-3">Top Picks <strong>For You</strong></h3>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+          <div class="container-fluid ">
+            <a class="navbar-brand" href="#"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">New Launges</a>
+                <a class="nav-link ms-3" href="#">Personlisation</a>
+                <a class="nav-link ms-3" href="#">Recently Viewed</a>
+                <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+              </div>
+            </div>
+          </div>
+        </nav>
+        <br><br>
+        <!-- <h6 class="h6 ms-4">New Launges <span class="sp1">personlisation  Recently Viewed</span> </h6><br> -->
+        <div class="row ms-2 me-2">
+    
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+    
+              <img class="i3" src="./media/airdopes5.webp" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title">Immortal 158</h5>
+                <p class="card-text">$1,399 <s class="s1">$3,499</s> <span class="span">60%off</span></p>
+                <p class="p1"><i class="fa-solid fa-star " style="color: #FFD43B;"></i>Be first to review<button
+                    class="button1  ms-5">Add To Cart </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="i3" src="./media/airdopes6.webp" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title">Stone Lumos</h5>
+                <p class="card-text">$6,999 <s class="s1">$14,999</s> <span class="span">53%off</span></p>
+                <p class="p1"><i class="fa-solid fa-star " style="color: #FFD43B;"></i>Be first to review <button
+                    class="button1  ms-5">Add To Cart </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="i3" src="./media/airdopes7.webp" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title">Stone 190 pro</h5>
+                <p class="card-text">$1,099 <s class="s1">$2,999</s> <span class="span">63%off</span></p>
+                <p class="p1"><i class="fa-solid fa-star " style="color: #FFD43B;"></i>Be first to review <button
+                    class="button1  ms-5">Add To Cart </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="i3" src="./media/airdopes8.webp" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title">Airdopes 121 Pro Plus</h5>
+                <p class="card-text">$1,399 <s class="s1">$4,990</s> <span class="span">72%off</span></p>
+                <p class="p1"><i class="fa-solid fa-star " style="color: #FFD43B;"></i>Be first to review<button
+                    class="button1  ms-5">Add To Cart </button>
+                </p>
+    
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="container ">
+        <div class="row ms-4">
+          <div class="col-md-3 col-lg-3  ">
+            <img class="i8 " src="./media/warranty.svg" alt="">
+            <p class="p8 ms-3"><b>1 year</b> warranty</p>
+    
+          </div>
+          <div class="col-md-3 col-lg-3 ">
+            <img class="i8 " src="./media/replacement.svg" alt="">
+            <p class="p8 ms-3"><b>7-day</b> Replacement</p>
+    
+          </div>
+          <div class="col-md-3 col-lg-3  ">
+            <img class="i8 " src="./media/shipping.svg" alt="">
+            <p class="p8 ms-5"><b>Free</b> Shipping</p>
+    
+          </div>
+          <div class="col-md-3 col-lg-3 ">
+            <img class="i8 " src="./media/billing.svg" alt="">
+            <p class="p8 ms-5" ><b>GST</b> Billing</p>
+    
+          </div>
+        </div>
+
+
+
+    
+        <!-- <img class="i6 mb-5" src="./media/replacement.svg" alt="">
+        <img class="i6 mb-5" src="./media/shipping.svg" alt="">
+        <img class="i6 mb-5" src="./media/billing.svg" alt=""> -->
+    
+      </div>
+
+
+
+      <br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="container">
+
+        <h3 class="top ms-5 mb-5">Shop by <strong>lifestye</strong></h3>
+    
+        <div class="row ms-2 me-2">
+    
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+    
+              <img class="i5" src="./media/fitness.webp" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title text-center "><strong>For Fitness</strong></h5>
+                <p class="p2 text-center text-primary">View All -></p>
+                <!-- <p class="card-text">$899 <s class="s1">$2,999</s> <span class="span">70%off</span></p>
+              <button class="button">Add To Cart </button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="i5" src="./media/parties.webp" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title text-center"><strong>For Parties</strong></h5>
+                <p class="p2 text-center text-primary">View All -></p>
+    
+                <!-- <p class="card-text">$999 <s class="s1">$3,490</s> <span class="span">71%off</span></p>
+              <button class="button">Add To Cart </button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="i5" src="./media/work.webp" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title text-center"><strong>For Work</strong></h5>
+                <p class="p2 text-center text-primary">View All -></p>
+    
+                <!-- <p class="card-text">$999  <s class="s1">$2,490</s> <span class="span">60%off</span></p>
+              <button class="button">Add To Cart </button> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="i5" src="./media/autophiles.webp" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title text-center"><strong>For Autophiles</strong></h5>
+                <p class="p2 text-center text-primary">View All -></p>
+    
+                <!-- <p class="card-text">$1,999  <s class="s1">$7,990</s> <span class="span">75%off</span></p>
+              <button class="button">Add To Cart </button> -->
+    
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <br><br>
+
+
+      <div class="container">
+
+        <br>
+        <h3 class="top ms-5 mt-3">Best of <strong>boAt</strong></h3>
+        <br>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+          <div class="container-fluid ">
+            <a class="navbar-brand" href="#"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active  fs-5" aria-current="page" href="#">Best Sellers</a>
+                <a class="nav-link ms-4 fs-5" href="#">Home Theatre Systems & Soundbars</a>
+                <a class="nav-link ms-4 fs-5" href="#">Top Earbuds</a>
+                <a class="nav-link ms-4 fs-5" href="#">Top Watches</a>
+                <a class="nav-link ms-4 fs-5" href="#">Car Accessories</a>
+    
+                <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- <h6 class="h6 ms-4">New Launges <span class="sp1">personlisation  Recently Viewed</span> </h6><br> -->
+        <div class="row ms-2 me-2">
+    
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+    
+              <img class="i3" src="./media/airdopes9.webp" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title">Airdopes Supreme</h5>
+                <p class="card-text">$1,499 <s class="s1">$5,990</s> <span class="span">75%off</span></p>
+                <p class="p1"><i class="fa-solid fa-star " style="color: #FFD43B;"></i>4.9<button class="button1  ms-5">Add
+                    To Cart </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="i3" src="./media/airdopes10.webp" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title">Storm Call</h5>
+                <p class="card-text">$1,699 <s class="s1">$6,999</s> <span class="span">76%off</span></p>
+                <p class="p1"><i class="fa-solid fa-star " style="color: #FFD43B;"></i>4.8 <button class="button1  ms-5">Add
+                    To Cart </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="i3" src="./media/airdopes11.webp" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title">Airdopes 131 Pro</h5>
+                <p class="card-text">$1,099 <s class="s1">$2,990</s> <span class="span">63%off</span></p>
+                <p class="p1"><i class="fa-solid fa-star " style="color: #FFD43B;"></i>4.9 <button class="button1  ms-5">Add
+                    To Cart </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card">
+              <img class="i3" src="./media/airdopes12.webp" class="card-img-top" alt="Card image">
+              <div class="card-body">
+                <h5 class="card-title">Airdopes 381</h5>
+                <p class="card-text">$1,999 <s class="s1">$4,990</s> <span class="span">60%off</span></p>
+                <p class="p1"><i class="fa-solid fa-star " style="color: #FFD43B;"></i>4.8<button class="button1  ms-5">Add
+                    To Cart </button>
+                </p>
+    
+    
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+
+
+      
+
+
+
+
+
+  
+  <div class="container">
+
+    <h3 class="top ms-5 mt-3"> <strong>Blogs</strong></h3>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active  fs-5" aria-current="page" href="#">Popular</a>
+            <a class="nav-link ms-4 fs-5" href="#">Latest</a>
+
+            <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- <h6 class="h6 ms-4">New Launges <span class="sp1">personlisation  Recently Viewed</span> </h6><br> -->
+    <div class="row ms-2 me-2">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+
+          <img class="i3" src="./media/blog1.webp" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <p>21 Mar,2024</p>
+            <h5 class="card-title">Gaming Earbuds for Travel: Compact and portable Gaming Solutions </h5>
+            <p class="p2">When nothing can stop a gamer from entering the arena,we have ...</p>
+
+            <a href="#" class="btn-1 text-center"> Read More-></a>
+            <!-- <button class="button1 ms-5">Read More-> </button> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img class="i3" src="./media/blog2.webp" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <p>08 Mar,2024</p>
+            <h5 class="card-title">How To Create Watch Faces Using The Watch Face Studio </h5>
+            <p class="p2">Why stick to a few watch faces onyour smartwatch when you can many.check out our ...</p>
+            <a href="#" class="btn-1 text-center"> Read More-></a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img class="i3" src="./media/blog3.webp" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <p>13 Mar,2024</p>
+            <h5 class="card-title">ANC for work:How Noise-Cancelling Headphones can Boost Productivity </h5>
+            <p class="p2">Noise at the work place can become annoying sometimes.Don't worry...</p>
+
+            <a href="#" class="btn-1 text-center"> Read More-></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img class="i3" src="./media/blog1.webp" class="card-img-top" alt="Card image">
+          <div class="card-body">
+            <p>14 Mar,2024</p>
+            <h5 class="card-title">Boosting Productivity With Smartwatches </h5>
+            <p class="p2">Moden life is 24/7 rush hour and we want our productivity to be at the top at all
+              times.Check...</p>
+
+            <a href="#" class="btn-1 text-center"> Read More-></a>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- ------------------------------------------------------footer---------------------------------------------------- -->
+
+
+
+
+
+  <footer class="text-center bg-body-tertiary">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+        <!-- Github -->
+        <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2020 Copyright:
+      <a class="text-body" href="https://mdbootstrap.com/">boAt.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
